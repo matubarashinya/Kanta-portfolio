@@ -1,3 +1,24 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
+input, button, textarea, select {
+  -webkit-appearance: none;
+  appearance: none; }
+
+body {
+  color: #FFFFFF;
+  font-family: ヒラギノ明朝 ProN;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom; }
+
+.header_top {
+  background: #000; }
 
 /*# sourceMappingURL=style.css.map */
