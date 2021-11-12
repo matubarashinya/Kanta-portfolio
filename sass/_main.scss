@@ -1,0 +1,30 @@
+.about_area{
+  background: $mainClor;
+  border-top: 0.5px solid #707070;
+  max-width: 100%;
+  .about_area_content{
+    display: flex;
+    .about_left_content{
+      margin: 300px 0 0 250px;
+      h2{
+        font-size: 60px;
+        letter-spacing: 10px;
+      }
+      h3{
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      p{
+        margin-top: 60px;
+        line-height: 40px;
+      }
+    }
+    .about_right_content{
+      margin-left: auto;
+      .about_area_image{
+        height: 700px;
+        margin: 250px 250px 250px 0;
+      }
+    }
+  }
+}
