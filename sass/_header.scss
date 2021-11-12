@@ -1,3 +1,36 @@
 .header_top{
   background: $mainClor;
+  .container{
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #707070;
+    .home_log_header{
+      .imaga_log{
+        height: 80px;
+        margin-left: 30px;
+      }
+    }
+    .nav_header{
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      .list_nav_header{
+        font-size: 20px;
+        display: flex;
+        padding: 0 50px;
+        li{
+          margin-left: 40px;
+        }
+      }
+      .sns_nav_header{
+        margin: 0 80px 0 50px;
+        img{
+          height: 40px;
+          margin-left: 50px;
+        }
+      }
+    }
+  }
 }
