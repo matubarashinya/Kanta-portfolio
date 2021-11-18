@@ -68,4 +68,65 @@ img {
         height: 700px;
         margin: 250px 250px 250px 0; }
 
+.concept_area {
+  background: #000;
+  border-top: 0.5px solid #707070; }
+  .concept_area .concept_area_contents {
+    position: relative; }
+    .concept_area .concept_area_contents .concept_area_image {
+      height: 850px;
+      margin: 400px; }
+    .concept_area .concept_area_contents .concept_area_sentence {
+      position: absolute;
+      top: 730px;
+      left: 850px;
+      background-color: #FFFFFF;
+      color: #000;
+      text-align: center;
+      height: 570px;
+      width: 430px; }
+      .concept_area .concept_area_contents .concept_area_sentence h2 {
+        font-size: 25px;
+        padding-top: 95px; }
+      .concept_area .concept_area_contents .concept_area_sentence .first_sentence {
+        font-size: 20px;
+        padding-top: 70px; }
+      .concept_area .concept_area_contents .concept_area_sentence .second_sentence {
+        font-size: 20px;
+        padding-top: 60px; }
+
+.form_contact_area {
+  background: #000;
+  border-top: 0.5px solid #707070;
+  max-width: 100%; }
+  .form_contact_area h2 {
+    margin-top: 80px;
+    font-size: 25px;
+    text-align: center; }
+  .form_contact_area table {
+    margin: 80px 650px 10px auto; }
+    .form_contact_area table tr th {
+      padding: 17px; }
+    .form_contact_area table tr td {
+      padding: 17px; }
+    .form_contact_area table tr input, .form_contact_area table tr textarea {
+      background-color: #e0e0e0; }
+    .form_contact_area table tr input {
+      width: 250px;
+      height: 30px; }
+    .form_contact_area table tr textarea {
+      width: 250px;
+      height: 100px; }
+  .form_contact_area .form_button {
+    text-align: center;
+    padding: 20px 0; }
+    .form_contact_area .form_button input[type="submit"] {
+      background: #000;
+      padding: 10px;
+      text-align: center;
+      color: #FFF;
+      margin: 5px;
+      border: 1px solid;
+      width: 150px; }
+
 /*# sourceMappingURL=style.css.map */
