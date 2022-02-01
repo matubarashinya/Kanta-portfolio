@@ -18,115 +18,171 @@ img {
   height: auto;
   vertical-align: bottom; }
 
+html {
+  font-size: 62.5%; }
+
 .header_top {
-  background: #000; }
+  background: #000;
+  width: 100%;
+  border-bottom: 0.5px solid #707070; }
   .header_top .container {
-    max-width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
     height: 100px;
     display: flex;
-    align-items: center;
-    border-bottom: 0.5px solid #707070; }
-    .header_top .container .home_log_header .imaga_log {
-      height: 80px;
-      margin-left: 30px; }
+    align-items: center; }
+    .header_top .container .home_log_header a .imaga_log {
+      height: 83px;
+      width: 100%; }
     .header_top .container .nav_header {
       margin-left: auto;
       display: flex;
       align-items: center; }
       .header_top .container .nav_header .list_nav_header {
-        font-size: 20px;
+        font-size: 2rem;
         display: flex;
-        padding: 0 50px; }
-        .header_top .container .nav_header .list_nav_header li {
-          margin-left: 40px; }
+        padding-right: 6.2rem; }
+        .header_top .container .nav_header .list_nav_header :not(:first-child) {
+          margin-left: 3.6rem; }
       .header_top .container .nav_header .sns_nav_header {
-        margin: 0 80px 0 50px; }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; }
         .header_top .container .nav_header .sns_nav_header img {
+          object-fit: contain;
           height: 40px;
-          margin-left: 50px; }
+          padding-right: 2.4rem; }
+
+.main_area img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
 
 .about_area {
   background: #000;
   border-top: 0.5px solid #707070;
-  max-width: 100%; }
+  width: 100%;
+  height: auto;
+  padding: 12.8rem 0; }
   .about_area .about_area_content {
-    display: flex; }
+    display: flex;
+    width: calc(100% - 100px);
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between; }
     .about_area .about_area_content .about_left_content {
-      margin: 300px 0 0 250px; }
+      width: 40%; }
       .about_area .about_area_content .about_left_content h2 {
-        font-size: 60px;
-        letter-spacing: 10px; }
+        font-size: 5.08rem;
+        letter-spacing: 1rem; }
       .about_area .about_area_content .about_left_content h3 {
-        font-size: 20px;
-        margin-top: 20px; }
+        font-size: 2rem;
+        margin-top: 2rem; }
       .about_area .about_area_content .about_left_content p {
-        margin-top: 60px;
-        line-height: 40px; }
+        margin-top: 6.08rem;
+        line-height: 4rem;
+        font-size: 1.6rem; }
     .about_area .about_area_content .about_right_content {
-      margin-left: auto; }
+      width: 50%; }
       .about_area .about_area_content .about_right_content .about_area_image {
-        height: 700px;
-        margin: 250px 250px 250px 0; }
+        width: 80%; }
 
 .concept_area {
   background: #000;
-  border-top: 0.5px solid #707070; }
+  border-top: 0.5px solid #707070;
+  width: 100%;
+  height: 1250px;
+  padding: 12.8rem 0; }
   .concept_area .concept_area_contents {
+    width: calc(100% - 100px);
+    max-width: 1000px;
+    margin: 0 auto;
     position: relative; }
     .concept_area .concept_area_contents .concept_area_image {
-      height: 850px;
-      margin: 400px; }
+      width: 50%; }
     .concept_area .concept_area_contents .concept_area_sentence {
       position: absolute;
-      top: 730px;
-      left: 850px;
+      top: 50%;
+      left: 45%;
       background-color: #FFFFFF;
       color: #000;
       text-align: center;
-      height: 570px;
-      width: 430px; }
+      width: 50%;
+      height: 80%;
+      padding: 4.8rem; }
       .concept_area .concept_area_contents .concept_area_sentence h2 {
-        font-size: 25px;
-        padding-top: 95px; }
+        font-size: 2.6rem;
+        margin-top: 5rem; }
       .concept_area .concept_area_contents .concept_area_sentence .first_sentence {
-        font-size: 20px;
-        padding-top: 70px; }
+        font-size: 2rem;
+        margin-top: 6rem; }
       .concept_area .concept_area_contents .concept_area_sentence .second_sentence {
-        font-size: 20px;
-        padding-top: 60px; }
+        font-size: 2rem;
+        margin-top: 6rem; }
 
 .form_contact_area {
   background: #000;
   border-top: 0.5px solid #707070;
-  max-width: 100%; }
-  .form_contact_area h2 {
-    margin-top: 80px;
-    font-size: 25px;
-    text-align: center; }
-  .form_contact_area table {
-    margin: 80px 650px 10px auto; }
-    .form_contact_area table tr th {
-      padding: 17px; }
-    .form_contact_area table tr td {
-      padding: 17px; }
-    .form_contact_area table tr input, .form_contact_area table tr textarea {
-      background-color: #e0e0e0; }
-    .form_contact_area table tr input {
-      width: 250px;
-      height: 30px; }
-    .form_contact_area table tr textarea {
-      width: 250px;
-      height: 100px; }
-  .form_contact_area .form_button {
+  width: 100%;
+  height: 900px;
+  padding: 12.8rem 0; }
+  .form_contact_area .form_area {
+    max-width: 800px;
     text-align: center;
-    padding: 20px 0; }
-    .form_contact_area .form_button input[type="submit"] {
-      background: #000;
-      padding: 10px;
+    margin: 0 auto; }
+    .form_contact_area .form_area h2 {
+      font-size: 5.08rem;
+      margin-bottom: 7.5rem; }
+    .form_contact_area .form_area table {
+      margin: 0 auto;
+      font-size: 1.5rem; }
+      .form_contact_area .form_area table tr th {
+        padding: 2.3rem 1.7rem; }
+      .form_contact_area .form_area table tr td {
+        padding: 1.7rem; }
+      .form_contact_area .form_area table tr input, .form_contact_area .form_area table tr textarea {
+        background-color: #e0e0e0; }
+      .form_contact_area .form_area table tr input {
+        width: 300px;
+        height: 40px;
+        border-radius: 0.5rem; }
+      .form_contact_area .form_area table tr textarea {
+        width: 300px;
+        height: 110px;
+        border-radius: 0.5rem; }
+    .form_contact_area .form_area .form_button {
       text-align: center;
-      color: #FFF;
-      margin: 5px;
-      border: 1px solid;
-      width: 150px; }
+      padding: 8rem 0 8rem 5.5rem; }
+      .form_contact_area .form_area .form_button input[type="submit"] {
+        background: #000;
+        padding: 2rem;
+        text-align: center;
+        color: #FFF;
+        margin: 0.5rem;
+        border: 1px solid;
+        border-radius: 0.5rem;
+        width: 250px;
+        font-size: 1.5rem; }
+
+.footer_area {
+  background: #000;
+  border-top: 0.5px solid #707070;
+  width: 100%; }
+  .footer_area .container_footer {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; }
+    .footer_area .container_footer ul {
+      display: flex;
+      justify-content: space-between; }
+      .footer_area .container_footer ul li {
+        font-size: 2rem;
+        padding: 10rem 3rem 13rem 3rem; }
+    .footer_area .container_footer .copyright {
+      padding-bottom: 3rem;
+      font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */

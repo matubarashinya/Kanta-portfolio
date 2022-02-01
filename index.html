@@ -2,9 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
   <title>KANTA PORTFOLIO</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,9 +11,16 @@
   <header class="header_top">
     <div class="container">
       <div class="home_log_header">
-        <img src="images/log_kanta.png" alt="ロゴ" class="imaga_log">
+        <a href="#" >
+          <img src="images/log_kanta.png" alt="ロゴ" class="imaga_log">
+        </a>
       </div>
-      <nav class="nav_header">
+      <nav class="nav_header" id="hamburger">
+        <p class="btn-gNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </p>
         <ul class="list_nav_header">
           <li><a href="">About</a></li>
           <li><a href="">Concept</a></li>
@@ -67,94 +72,65 @@
     <section class="concept_area">
       <div class="concept_area_contents">
         <img src="images/concept_kanta.png" alt="コンセプト画像" class="concept_area_image">
-          <div class="concept_area_sentence">
-            <h2>夢の大きさが人の器を決める</h2>
-            <p class="first_sentence">
-              毎日当たり前のように、
-              <br>
-              ヘアスタイルについて学ぶ。
-              <br>
-              それこそがお客様に
-              <br>
-              選んでいただける理由だと思う。
-            </p>
-            <p class="second_sentence">
-              自分が施術することで
-              <br>
-              お客様の人生を共に
-              <br>
-              美しくするヘアデザイナーで
-              <br>
-              ありたいとおもいます。
-            </p>
-          </div>
+        <div class="concept_area_sentence">
+          <h2>夢の大きさが人の器を決める</h2>
+          <p class="first_sentence">
+            毎日当たり前のように、
+            <br>
+            ヘアスタイルについて学ぶ。
+            <br>
+            それこそがお客様に
+            <br>
+            選んでいただける理由だと思う。
+          </p>
+          <p class="second_sentence">
+            自分が施術することで
+            <br>
+            お客様の人生を共に
+            <br>
+            美しくするヘアデザイナーで
+            <br>
+            ありたいとおもいます。
+          </p>
+        </div>
       </div>
     </section>
-
+    <!-- instagram Graph API 後で実装 -->
     <!-- <section class="works_area">
+      <ul id="gallery" class="gallery"></ul>
+      <div class="instagram-gallery"></div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.min.js"></script>
+      <script src="js/script.js"></script>
     </section> -->
-
-    <!-- <section class="contact_area">
-      <div class="contact_contents">
-        <h2>Contact</h2>
-        <form action="" method="" class="form_top">
-          <div class="form_item">
-            <p class="form_item_label">
-              名前
-            </p>
-            <input type="text" name="name">
-          </div>
-          <div class="form_item">
-            <p class="form_item_label">
-              E-mail
-            </p>
-            <input type="email" name="email">
-          </div>
-          <div class="form_item">
-            <p class="form_item_label">
-              TEL
-            </p>
-            <input type="text" name="tel">
-          </div>
-          <div class="form_item">
-            <p class="form_item_label">
-              MESSAGE 
-            </p>
-            <textarea></textarea>
-          </div>
-          <div class="form_item">
-            <input type="submit" class="form_btn" value="問い合わせる">
-          </div>
-        </form>
-      </div>
-    </section> -->
-
     <form class="form_contact_area">
-      <h2>Contact</h2>
-      <table>
-          <tr>
-              <th><label>お名前</label></th>
-              <td><input type="text"></td>
-          </tr>
-          <tr>
-              <th><label>E-mail</label></th>
-              <td><input type="text"></td>
-          </tr>
-          <tr>
-              <th><label>TEL</label></th>
-              <td><input type="text"></td>
-          </tr>
-          <tr>
-              <th><label>MESSAGE</label></th>
-              <td><textarea></textarea></td>
-          </tr>
-      </table>
-      <div class="form_button">
-        <input type="submit" value="送信">
+      <div class="form_area">
+        <h2>Contact</h2>
+        <table>
+            <tr>
+                <th><label>お名前</label></th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th><label>E-mail</label></th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th><label>TEL</label></th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th><label>MESSAGE</label></th>
+                <td><textarea></textarea></td>
+            </tr>
+        </table>
+        <div class="form_button">
+          <input type="submit" value="送信">
+        </div>
       </div>
-  </form>
+    </form>
   </main>
-  <footer>
+  <footer class="footer_area">
     <div class="container_footer">
       <ul>
         <li><a href="">About</a></li>
@@ -165,5 +141,23 @@
       <p class="copyright">© FUJI KANTA PORTFOLIO</p>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+      $('.btn-gNav').on("click", function(){
+
+        $(this).toggleClass('open');
+        $('#gNav').toggleClass('open');
+      });
+
+    });
+
+    // メニューをクリックされたら、非表示にする
+    $(function() {
+      $('.gNav-menu li a').on("click", function(){
+        $('#gNav').removeClass('open');
+      });
+    });
+  </script>
 </body>
 </html>
